@@ -1,0 +1,75 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {}
+		}, {
+			"path": "pages/cartoon/cartoon",
+			"style": {
+				/* "navigationStyle": "default",
+				"navigationBarBackgroundColor": "#cd334c",
+				"navigationBarTextStyle": "white",
+				"transparentTitle": "auto",
+				"navigationBarTitleText": "漫画" */
+			}
+		}, {
+			"path": "pages/history/history",
+			"style": {
+
+			}
+		}, {
+			"path": "pages/story/story",
+			"style": {
+				"navigationBarTitleText": "小说"
+			}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"color": "#989898",
+		"fontSize": "11px",
+		"iconWidth": "21px",
+		"selectedColor": "#FD627C",
+		"list": [{
+				"pagePath": "pages/cartoon/cartoon",
+				"iconPath": "static/img/tabbar/icon2.png",
+				"selectedIconPath": "static/img/tabbar/icon2-active.png",
+				"text": "漫画"
+			},
+			{
+				"pagePath": "pages/story/story",
+				"iconPath": "static/img/tabbar/icon3.png",
+				"selectedIconPath": "static/img/tabbar/icon3-active.png",
+				"text": "小说"
+			},
+			{
+				"pagePath": "pages/history/history",
+				"iconPath": "static/img/tabbar/icon1.png",
+				"selectedIconPath": "static/img/tabbar/icon1-active.png",
+				"text": "历史"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/img/tabbar/icon4.png",
+				"selectedIconPath": "static/img/tabbar/icon4-active.png",
+				"text": "我的"
+			}
+		]
+	}
+}
